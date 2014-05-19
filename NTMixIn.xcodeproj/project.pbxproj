@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0147D64F192A391E004ED094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0147D64E192A391E004ED094 /* Foundation.framework */; };
+		0147D65D192A391E004ED094 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0147D65C192A391E004ED094 /* XCTest.framework */; };
+		0147D65E192A391E004ED094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0147D64E192A391E004ED094 /* Foundation.framework */; };
+		0147D660192A391E004ED094 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0147D65F192A391E004ED094 /* UIKit.framework */; };
+		0147D663192A391E004ED094 /* libNTMixIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0147D64B192A391E004ED094 /* libNTMixIn.a */; };
+		0147D669192A391E004ED094 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0147D667192A391E004ED094 /* InfoPlist.strings */; };
+		0147D66B192A391E004ED094 /* NTMixInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0147D66A192A391E004ED094 /* NTMixInTests.m */; };
+		0147D67F192A39EB004ED094 /* NSObject+NTMixIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0147D67E192A39EB004ED094 /* NSObject+NTMixIn.m */; };
+		0147D680192A39EB004ED094 /* NSObject+NTMixIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0147D67E192A39EB004ED094 /* NSObject+NTMixIn.m */; };
+		0147D682192A42C4004ED094 /* NTMixIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 0147D653192A391E004ED094 /* NTMixIn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0147D683192A42C8004ED094 /* NSObject+NTMixIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 0147D67D192A39EB004ED094 /* NSObject+NTMixIn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0147D661192A391E004ED094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0147D643192A391E004ED094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0147D64A192A391E004ED094;
+			remoteInfo = NTMixIn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0147D64B192A391E004ED094 /* libNTMixIn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNTMixIn.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0147D64E192A391E004ED094 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0147D652192A391E004ED094 /* NTMixIn-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NTMixIn-Prefix.pch"; sourceTree = "<group>"; };
+		0147D653192A391E004ED094 /* NTMixIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTMixIn.h; sourceTree = "<group>"; };
+		0147D65B192A391E004ED094 /* NTMixInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTMixInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0147D65C192A391E004ED094 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0147D65F192A391E004ED094 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0147D666192A391E004ED094 /* NTMixInTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NTMixInTests-Info.plist"; sourceTree = "<group>"; };
+		0147D668192A391E004ED094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0147D66A192A391E004ED094 /* NTMixInTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTMixInTests.m; sourceTree = "<group>"; };
+		0147D67D192A39EB004ED094 /* NSObject+NTMixIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NTMixIn.h"; sourceTree = "<group>"; };
+		0147D67E192A39EB004ED094 /* NSObject+NTMixIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NTMixIn.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0147D648192A391E004ED094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0147D64F192A391E004ED094 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0147D658192A391E004ED094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0147D65D192A391E004ED094 /* XCTest.framework in Frameworks */,
+				0147D663192A391E004ED094 /* libNTMixIn.a in Frameworks */,
+				0147D660192A391E004ED094 /* UIKit.framework in Frameworks */,
+				0147D65E192A391E004ED094 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0147D642192A391E004ED094 = {
+			isa = PBXGroup;
+			children = (
+				0147D650192A391E004ED094 /* NTMixIn */,
+				0147D664192A391E004ED094 /* NTMixInTests */,
+				0147D64D192A391E004ED094 /* Frameworks */,
+				0147D64C192A391E004ED094 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0147D64C192A391E004ED094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0147D64B192A391E004ED094 /* libNTMixIn.a */,
+				0147D65B192A391E004ED094 /* NTMixInTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0147D64D192A391E004ED094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0147D64E192A391E004ED094 /* Foundation.framework */,
+				0147D65C192A391E004ED094 /* XCTest.framework */,
+				0147D65F192A391E004ED094 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0147D650192A391E004ED094 /* NTMixIn */ = {
+			isa = PBXGroup;
+			children = (
+				0147D653192A391E004ED094 /* NTMixIn.h */,
+				0147D67D192A39EB004ED094 /* NSObject+NTMixIn.h */,
+				0147D67E192A39EB004ED094 /* NSObject+NTMixIn.m */,
+				0147D651192A391E004ED094 /* Supporting Files */,
+			);
+			path = NTMixIn;
+			sourceTree = "<group>";
+		};
+		0147D651192A391E004ED094 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0147D652192A391E004ED094 /* NTMixIn-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0147D664192A391E004ED094 /* NTMixInTests */ = {
+			isa = PBXGroup;
+			children = (
+				0147D66A192A391E004ED094 /* NTMixInTests.m */,
+				0147D665192A391E004ED094 /* Supporting Files */,
+			);
+			path = NTMixInTests;
+			sourceTree = "<group>";
+		};
+		0147D665192A391E004ED094 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0147D666192A391E004ED094 /* NTMixInTests-Info.plist */,
+				0147D667192A391E004ED094 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0147D681192A4281004ED094 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0147D682192A42C4004ED094 /* NTMixIn.h in Headers */,
+				0147D683192A42C8004ED094 /* NSObject+NTMixIn.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0147D64A192A391E004ED094 /* NTMixIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0147D66E192A391E004ED094 /* Build configuration list for PBXNativeTarget "NTMixIn" */;
+			buildPhases = (
+				0147D647192A391E004ED094 /* Sources */,
+				0147D648192A391E004ED094 /* Frameworks */,
+				0147D681192A4281004ED094 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTMixIn;
+			productName = NTMixIn;
+			productReference = 0147D64B192A391E004ED094 /* libNTMixIn.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0147D65A192A391E004ED094 /* NTMixInTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0147D671192A391E004ED094 /* Build configuration list for PBXNativeTarget "NTMixInTests" */;
+			buildPhases = (
+				0147D657192A391E004ED094 /* Sources */,
+				0147D658192A391E004ED094 /* Frameworks */,
+				0147D659192A391E004ED094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0147D662192A391E004ED094 /* PBXTargetDependency */,
+			);
+			name = NTMixInTests;
+			productName = NTMixInTests;
+			productReference = 0147D65B192A391E004ED094 /* NTMixInTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0147D643192A391E004ED094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Tarbayev;
+			};
+			buildConfigurationList = 0147D646192A391E004ED094 /* Build configuration list for PBXProject "NTMixIn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0147D642192A391E004ED094;
+			productRefGroup = 0147D64C192A391E004ED094 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0147D64A192A391E004ED094 /* NTMixIn */,
+				0147D65A192A391E004ED094 /* NTMixInTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0147D659192A391E004ED094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0147D669192A391E004ED094 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0147D647192A391E004ED094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0147D67F192A39EB004ED094 /* NSObject+NTMixIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0147D657192A391E004ED094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0147D66B192A391E004ED094 /* NTMixInTests.m in Sources */,
+				0147D680192A39EB004ED094 /* NSObject+NTMixIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0147D662192A391E004ED094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0147D64A192A391E004ED094 /* NTMixIn */;
+			targetProxy = 0147D661192A391E004ED094 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0147D667192A391E004ED094 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0147D668192A391E004ED094 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0147D66C192A391E004ED094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0147D66D192A391E004ED094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0147D66F192A391E004ED094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NTMixIn.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTMixIn/NTMixIn-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/${PRODUCT_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0147D670192A391E004ED094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NTMixIn.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTMixIn/NTMixIn-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/${PRODUCT_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0147D672192A391E004ED094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTMixIn/NTMixIn-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NTMixInTests/NTMixInTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0147D673192A391E004ED094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTMixIn/NTMixIn-Prefix.pch";
+				INFOPLIST_FILE = "NTMixInTests/NTMixInTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0147D646192A391E004ED094 /* Build configuration list for PBXProject "NTMixIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0147D66C192A391E004ED094 /* Debug */,
+				0147D66D192A391E004ED094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0147D66E192A391E004ED094 /* Build configuration list for PBXNativeTarget "NTMixIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0147D66F192A391E004ED094 /* Debug */,
+				0147D670192A391E004ED094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0147D671192A391E004ED094 /* Build configuration list for PBXNativeTarget "NTMixInTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0147D672192A391E004ED094 /* Debug */,
+				0147D673192A391E004ED094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0147D643192A391E004ED094 /* Project object */;
+}
