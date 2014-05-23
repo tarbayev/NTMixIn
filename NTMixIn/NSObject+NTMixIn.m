@@ -9,7 +9,7 @@
 #import "NSObject+NTMixIn.h"
 
 
-static SEL sel_regixterMixIn(Class mixInClass, SEL sel) {
+static SEL sel_registerMixInName(Class mixInClass, SEL sel) {
     const char *selName = sel_getName(sel);
     
     const char *className = class_getName(mixInClass);
@@ -44,13 +44,13 @@ static SEL sel_regixterMixIn(Class mixInClass, SEL sel) {
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
     
-    sel = sel_regixterMixIn(_mixInClass, sel);
+    sel = sel_registerMixInName(_mixInClass, sel);
     
     return [_caller methodSignatureForSelector:sel];
 }
 
 - (void)forwardInvocation:(NSInvocation *)invocation {
-    invocation.selector = sel_regixterMixIn(_mixInClass, invocation.selector);
+    invocation.selector = sel_registerMixInName(_mixInClass, invocation.selector);
     invocation.target = _caller;
     
     [invocation invoke];
@@ -67,12 +67,13 @@ static SEL sel_regixterMixIn(Class mixInClass, SEL sel) {
 
 static char MixInProxyKey;
 
-+ (id)mixInOfClass:(Class)mixInClass caller:(id)caller {
+static id MixInGetProxy(Class mixInClass, id caller) {
+
     NSMutableSet *mixInClasses = objc_getAssociatedObject([caller class], &MixInClassesKey);
     
     if (![mixInClasses containsObject:mixInClass])
         return nil;
-
+    
     MixInProxy *mixInProxy = objc_getAssociatedObject(caller, &MixInProxyKey);
     
     if (mixInProxy == nil) {
@@ -81,6 +82,14 @@ static char MixInProxyKey;
     }
     
     return mixInProxy;
+}
+
++ (id)mixInOfClass:(Class)mixInClass {
+    return MixInGetProxy(mixInClass, self);
+}
+
+- (id)mixInOfClass:(Class)mixInClass {
+    return MixInGetProxy(mixInClass, self);
 }
 
 
@@ -141,7 +150,7 @@ static char MixInClassesKey;
         const char *types = method_getTypeEncoding(method);
 
         class_addMethod(self, selector, implementation, types);
-        class_addMethod(self, sel_regixterMixIn(mixInClass, selector), implementation, types);
+        class_addMethod(self, sel_registerMixInName(mixInClass, selector), implementation, types);
     }
     
     free(instanceMethodList);
@@ -170,7 +179,7 @@ static char MixInClassesKey;
         const char *types = method_getTypeEncoding(method);
         
         class_addMethod(object_getClass(self), selector, implementation, types);
-        class_addMethod(self, sel_regixterMixIn(mixInClass, selector), implementation, types);
+        class_addMethod(self, sel_registerMixInName(mixInClass, selector), implementation, types);
     }
     
     free(classMethodList);

@@ -13,11 +13,12 @@
 @interface NSObject (NTMixIn)
 
 + (void)useMixIn:(Class)mixInClass;
-+ (id)mixInOfClass:(Class)mixInClass caller:(id)caller;
++ (id)mixInOfClass:(Class)mixInClass;
+- (id)mixInOfClass:(Class)mixInClass;
 
 @end
 
-#define MixIn(mixinClassType) [NSObject mixInOfClass:[mixinClassType class] caller:self]
+#define MixIn(mixinClassType) [self mixInOfClass:[mixinClassType class]]
 
 #define UseMixIn(mixInClassType) if ([[NSString stringWithFormat:@"%s", __PRETTY_FUNCTION__] rangeOfString:[@"[" stringByAppendingFormat:@"%s ", class_getName(self)]].location != NSNotFound)\
 [[self class] useMixIn:[mixInClassType class]]
