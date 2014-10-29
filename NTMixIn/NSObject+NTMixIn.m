@@ -31,7 +31,7 @@ static SEL sel_registerMixInName(Class mixInClass, SEL sel) {
 
 @implementation MixInProxy {
     Class _mixInClass;
-    id _caller;
+    __weak id _caller;
 }
 
 + (id)proxyForMixInClass:(Class)class caller:(id)caller {
